@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B6400835 Lab 0</title>
+</head>
+
+<body>
+    <form action="processResgister.php" method="post" autocapitalize="on" enctype="multipart/form-data">
+        Name: <input type="text" name="firstname" maxlength="10" size="20"><br>
+        Last Name: <input type="text" name="lastname" maxlength="10" size="20"><br>
+        Age: <input type="number" name="age" min="1" max="100"><br>
+        Sex: <select name="gender">
+            <option value="à¸«à¸à¸´à¸‡">à¸«à¸à¸´à¸‡</option>
+            <option value="à¸Šà¸²à¸¢">à¸Šà¸²à¸¢</option>
+        </select><br>
+        Image: <input type="file" name="file" id="file" accept="image/*"><br>
+        <input type="submit" name="show" value="Show">
+        <input type="submit" name="insert" value="Insert">
+    </form>
 </body>
+
 </html>
