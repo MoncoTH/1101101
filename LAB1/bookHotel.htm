@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B6400835 Lab 1</title>
+</head>
+
+<body>
+    Reseave a Hotel: <br>
+    <input list="Hotelname">
+    <datalist id="Hotelname">
+        <option value="โคราชคันทรีคลับ">
+        <option value="โคราชรีสอร์ท">
+        <option value="สุรสัมมนาคาร">
+        <option value="สุรนารีวิลล์">
+        <option value="สีมาธานี">
+    </datalist><br>
+
+    <form
+        oninput="Price.value=(1500) + (Children.valueAsNumber*300); Total.value=(Nights.valueAsNumber*Rooms.valueAsNumber)*(Price.value)">
+        Check-in: <input type="date" name="Check-in">Nights:<input type="number" name="Nights" min="1" max="30"><br>
+        Rooms: <input type="number" name="Rooms" min="1" max="9">
+        Adults per room: <input type="number" name="Adults" min="1" max="2">
+        Children per room: <input type="number" name="Children" min="0" max="2"><br>
+        Price per room: <output name="Price"></output> <br>
+        Total price: <output name="Total"></output><br>
+        <input type="submit" name="Reseave" value="Reseave">
+    </form>
+
+
+</body>
+
+</html>
